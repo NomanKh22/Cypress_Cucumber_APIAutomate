@@ -1,0 +1,28 @@
+{
+  "name": "api_automation",
+  "version": "1.0.0",
+  "description": "Automate API's with cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Noman Khan",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^22.1.0",
+    "cypress": "^14.4.1"
+  },
+    "cypress-cucumber-preprocessor": {
+    "cucumber_json_report": true,
+    "json": {
+      "enabled": true,
+      "formatter": "./jsonFormmatter/cucumber-json-formatter",
+      "output": "json-logs/report.json"
+    }
+  },
+  "dependencies": {
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.5",
+    "cypress-plugin-api": "^2.11.2",
+    "multiple-cucumber-html-reporter": "^3.9.2"
+  }
+}
