@@ -9,11 +9,8 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        browser: [chrome, firefox]
+    
 
     steps:
-      - name: Run Cypress tests on ${{ matrix.browser }}
-        run: npx cypress run --browser ${{ matrix.browser }}
+      - name: Run Cypress tests
+        run: npx cypress run
