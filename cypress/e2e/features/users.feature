@@ -19,3 +19,4 @@ Feature: GoRest Users API
     Then the user's name should be updated
 
     # Testing change 
+# change 2
